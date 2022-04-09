@@ -9,7 +9,7 @@
     "prestart": "npm run build",
     "watch": "tsc -w",
     "start": "node .",
-    "dev" : "nodemon dist/**",
+    "dev": "nodemon dist/**",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/AlexisAoun/portfolio-back#readme",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "nodemon": "^2.0.15",
     "winston": "^3.7.2"

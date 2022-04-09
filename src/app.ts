@@ -1,8 +1,10 @@
+import 'dotenv/config' 
 import express from 'express';
 import winston from 'winston';
 
 const app = express();
-const port = 3000;
+//please
+const port = process.env.PORT;
 
 // creating the logger of the app
 const format = winston.format;
