@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  api: 
+    container_name: 'portfolio-api'
+    build: .
+    depends_on: 
+      - portfolio-db
+    ports:
+      - '8000:8000'
+    networks:
+      - default
+
