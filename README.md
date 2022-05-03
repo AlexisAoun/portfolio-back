@@ -4,9 +4,8 @@ The backend for my portfolio
 ### Tech Stack
 
 - Express
-- PostgreSQL
+- MongoDB
 - Typescript
-- TypeORM
 - GraphQL
 
 For logging : Winston
