@@ -3,9 +3,6 @@ The backend for my portfolio
 
 ### Tech Stack
 
-- Express
+- Rocket
 - MongoDB
-- Typescript
-- GraphQL
 
-For logging : Winston

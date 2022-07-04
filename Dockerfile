@@ -1,15 +1,10 @@
-# dev docker image
-From node:17.9.0
+FROM rust:1.31
 
-WORKDIR /usr/src/app
-
-COPY package*.json ./
-
-RUN npm install
-
+WORKDIR /usr/src/portfolio-back
 COPY . .
 
-EXPOSE 8000
+RUN rustup default stable
+RUN cargo build
 
-CMD ["npm", "run", "dev"]
+CMD ["cargo", "run"]
 
