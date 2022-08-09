@@ -11,7 +11,7 @@ services:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: root
     volumes:
-      - portfolio:/data/db
+      - portfolio-db:/data/db
 
   db-portal:
     image: mongo-express
