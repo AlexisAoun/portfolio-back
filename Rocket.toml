@@ -1,0 +1,2 @@
+[default.databases.portofolio_db]
+url = "mongodb://root:root@0.0.0.0:27017/"
