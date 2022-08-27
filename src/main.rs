@@ -1,3 +1,8 @@
+// author : Alexis Aoun
+// Note : My first ever Rust project
+
+//after further reading I understood that importing the crate with #macro_use makes it global to the hole project
+//one could simply import rocket with the 'use' keyword
 #[macro_use]
 extern crate rocket;
 
@@ -23,7 +28,9 @@ struct Tag {
 struct Article {
     title: String,
     content: String,
-    tags: Tag, //TODO should be an array
+    tags: Vec<Tag>,
+    keywords: Vec<String>, // for the search feature
+    value: u8,             // for ranking articles
 }
 
 #[get("/")]
@@ -44,7 +51,9 @@ async fn index() -> String {
     let my_first_article = Article {
         title: String::from("A python project"),
         content: String::from("this a super nice project using python"),
-        tags: python_tag,
+        tags: vec![python_tag],
+        keywords: vec!["python".to_string(), "project".to_string()],
+        value: 2,
     };
 
     article_collection
