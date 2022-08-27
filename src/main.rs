@@ -7,6 +7,7 @@
 extern crate rocket;
 
 use rocket_db_pools::mongodb::Client;
+use rocket_db_pools::mongodb::bson::oid::ObjectId;
 use serde::{Deserialize, Serialize};
 
 //TODO refactor
@@ -31,6 +32,30 @@ struct Article {
     tags: Vec<Tag>,
     keywords: Vec<String>, // for the search feature
     value: u8,             // for ranking articles
+}
+
+// TODO routes to implement :
+// - post addArticle
+// - post addTag
+
+// - get getArticleById
+// - get getArticlesByTags
+// - get getArticlesByKeyword
+// - get getAllArticles
+
+// - get getAllTags
+// - get getTagById
+// - get getTagName
+
+// - put updateArticleById
+// - put updateTagById
+
+// - delete deleteArticleById
+// - delete deleteTagById
+
+#[get("/article/<id>")]
+async fn add_article(id: u32) {
+     
 }
 
 #[get("/")]
