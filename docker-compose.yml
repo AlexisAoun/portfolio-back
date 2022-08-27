@@ -10,6 +10,8 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: root
+    volumes:
+      - portfolio-db:/data/db
 
   db-portal:
     image: mongo-express
@@ -21,10 +23,6 @@ services:
       ME_CONFIG_MONGODB_ADMINPASSWORD: root
       ME_CONFIG_MONGODB_URL: mongodb://root:root@db:27017/
   
-  api: 
-    build: .
-    links: 
-      - db
-    ports:
-      - 8000:8000
+volumes: 
+  portfolio-db:
 
