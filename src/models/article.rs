@@ -1,5 +1,5 @@
-use serde::{Deserialize, Serialize};
 use crate::models::tag::Tag;
+use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Article {
@@ -8,5 +8,5 @@ pub struct Article {
     content: String,
     tags: Vec<Tag>,
     keywords: Vec<String>, // for the search feature
-    value: u32,             // for ranking articles
+    value: u32,            // for ranking articles
 }
