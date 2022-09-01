@@ -10,7 +10,7 @@ mod models;
 mod routes;
 mod utils;
 
-use crate::routes::article::{add_article,index};
+use crate::routes::article::{add_article, index};
 
 #[launch]
 fn rocket() -> _ {
