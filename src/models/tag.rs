@@ -14,4 +14,3 @@ pub struct Tag {
     tag_type: TagType,
     color: String, //in hex format
 }
-
