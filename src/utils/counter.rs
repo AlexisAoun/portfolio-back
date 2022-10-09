@@ -6,10 +6,14 @@ pub async fn get_counter_value(counter_type: &String) -> u32 {
     let counter_collection: Collection<Counter> = get_counter_collection().await;
     let filter = doc! { "label": counter_type };
     let counter = match counter_collection.find_one(filter, None).await {
-        Ok(counter) => counter,
-        Err(err) => panic!("Error : Failed to fetch counter : {:?}", err),
+        Ok(counter) => match counter {
+            Some(res) => res.value,
+            None => panic!("Error : Failed to fetch counter"),
+        },
+        Err(err) => panic!("Error : Failed to fetch counter. Details : {:?}", err),
     };
-    counter.unwrap().value
+
+    counter
 }
 
 pub async fn increment_counter_value(counter_type: &String) -> u32 {
