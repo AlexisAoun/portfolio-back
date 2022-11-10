@@ -9,6 +9,7 @@ extern crate rocket;
 mod models;
 mod routes;
 mod utils;
+mod handlers;
 
 use crate::routes::article::{add_article, index};
 

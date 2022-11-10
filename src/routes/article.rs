@@ -1,8 +1,6 @@
+use crate::handlers::article;
 use crate::models::article::Article;
-use crate::utils::counter::{get_counter_value, increment_counter_value};
-use crate::utils::db::get_article_collection;
-use mongodb::Client;
-
+use rocket::serde::json::Json;
 // TODO routes to implement :
 // - post addArticle
 
@@ -15,10 +13,10 @@ use mongodb::Client;
 
 // - delete deleteArticleById
 
-//TODO figure out how form data works && create an article form data
-#[get("/article/add")]
-pub async fn add_article() {
-    let article_collection = get_article_collection().await;
+#[post("/article/add", format = "json", data = "<article_wrapper>")]
+pub async fn add_article(article_wrapper: Json<Article>) {
+    let article: Article = article_wrapper.into_inner();
+    article::add_article(article).await;
 }
 
 #[get("/")]
