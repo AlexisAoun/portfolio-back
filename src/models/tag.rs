@@ -9,7 +9,7 @@ enum TagType {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Tag {
-    tag_id: u32,
+    _id: u32,
     name: String,
     tag_type: TagType,
     color: String, //in hex format

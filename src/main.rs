@@ -11,9 +11,9 @@ mod routes;
 mod utils;
 mod handlers;
 
-use crate::routes::article::{add_article, index};
+use crate::routes::article::{add_article, get_all_articles, index};
 
 #[launch]
 fn rocket() -> _ {
-    rocket::build().mount("/", routes![add_article, index])
+    rocket::build().mount("/", routes![add_article, get_all_articles, index])
 }

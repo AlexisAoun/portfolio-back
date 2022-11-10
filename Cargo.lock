@@ -440,6 +440,7 @@ checksum = "ab30e97ab6aacfe635fad58f22c2bb06c8b685f7421eb1e064a729e2a5f481fa"
 dependencies = [
  "futures-channel",
  "futures-core",
+ "futures-executor",
  "futures-io",
  "futures-sink",
  "futures-task",
@@ -1122,6 +1123,7 @@ dependencies = [
 name = "portfolio-back"
 version = "0.1.0"
 dependencies = [
+ "futures",
  "mongodb",
  "rocket",
  "serde",

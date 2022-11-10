@@ -3,10 +3,10 @@ use rocket::serde::{Deserialize, Serialize};
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Article {
-    pub article_id: u32,
-    pub title: String,
-    pub content: String,
-    pub tags: Vec<Tag>,
-    pub keywords: Vec<String>, // for the search feature
-    pub value: u32,            // for ranking articles
+    _id: u32,
+    title: String,
+    content: String,
+    tags: Vec<Tag>,
+    keywords: Vec<String>, // for the search feature
+    value: u32,            // for ranking articles
 }

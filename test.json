@@ -1,0 +1,18 @@
+{
+  "_id": 2,
+  "title": "holla amigos",
+  "content": "sed niaak",
+  "tags": [
+    {
+      "_id": 1,
+      "name": "testtag",
+      "tag_type": "Tech",
+      "color": "#00000"
+    }
+  ],
+  "keywords": [
+    "word1",
+    "word2"
+  ],
+  "value": 1
+}

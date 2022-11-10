@@ -13,10 +13,15 @@ use rocket::serde::json::Json;
 
 // - delete deleteArticleById
 
-#[post("/article/add", format = "json", data = "<article_wrapper>")]
+#[post("/article/add", data = "<article_wrapper>")]
 pub async fn add_article(article_wrapper: Json<Article>) {
     let article: Article = article_wrapper.into_inner();
     article::add_article(article).await;
+}
+
+#[get("/article/all")]
+pub async fn get_all_articles() -> Json<Vec<Article>> {
+    Json(article::get_all_articles().await)
 }
 
 #[get("/")]
