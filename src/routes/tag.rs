@@ -1,10 +1,8 @@
-//TODO routes to implement
-// - post addTag
+use crate::handlers::tag;
+use crate::models::tag::Tag;
+use rocket::serde::json::Json;
 
-// - get getAllTags
-// - get getTagById
-// - get getTagName
-
-// - put updateTagById
-
-// - delete deleteTagById
+#[get("/article/all")]
+pub async fn get_all_tags() -> Json<Vec<Tag>> {
+    Json(tag::get_all_tags().await)
+}
