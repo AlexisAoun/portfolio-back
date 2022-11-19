@@ -8,5 +8,7 @@ pub struct Article {
     content: content::Content,
     images_url: Vec<String>,
     tags: Vec<tag::Tag>,
+    sourcecode_link: Option<String>,
+    demo_link: Option<String>,
     value: u32,            // for ranking articles
 }
