@@ -6,15 +6,18 @@
 #[macro_use]
 extern crate rocket;
 
+mod handlers;
 mod models;
 mod routes;
 mod utils;
-mod handlers;
 
 use crate::routes::article::get_all_articles;
 use crate::routes::tag::get_all_tags;
+use rocket::fs::{relative, FileServer};
 
 #[launch]
 fn rocket() -> _ {
-    rocket::build().mount("/", routes![get_all_articles, get_all_tags])
+    rocket::build()
+        .mount("/", routes![get_all_articles, get_all_tags])
+        .mount("/media/", FileServer::from(relative!("assets")))
 }

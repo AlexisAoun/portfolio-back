@@ -1,12 +1,11 @@
-use crate::models::tag::Tag;
+use crate::models::{tag, title, content};
 use rocket::serde::{Deserialize, Serialize};
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Serialize, Deserialize)]
 pub struct Article {
     _id: u32,
-    title: String,
-    content: String,
-    tags: Vec<Tag>,
-    keywords: Vec<String>, // for the search feature
+    title: title::Title,
+    content: content::Content,
+    tags: Vec<tag::Tag>,
     value: u32,            // for ranking articles
 }
