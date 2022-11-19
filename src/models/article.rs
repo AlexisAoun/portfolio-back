@@ -6,6 +6,7 @@ pub struct Article {
     _id: u32,
     title: title::Title,
     content: content::Content,
+    images_url: Vec<String>,
     tags: Vec<tag::Tag>,
     value: u32,            // for ranking articles
 }
