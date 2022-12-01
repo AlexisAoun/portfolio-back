@@ -1,0 +1,170 @@
+[
+  {
+    "_id": 1,
+    "name": "Python",
+    "tag_type": "Tech",
+    "color": "#9CB4CC"
+  },
+  {
+    "_id": 2,
+    "name": "Java",
+    "tag_type": "Tech",
+    "color": "#F2D7D9"
+  },
+  {
+    "_id": 3,
+    "name": "Javascript/Typescript",
+    "tag_type": "Tech",
+    "color": "#D3CEDF"
+  },
+  {
+    "_id": 4,
+    "name": "QlikSense",
+    "tag_type": "Tech",
+    "color": "#748DA6"
+  },
+  {
+    "_id": 5,
+    "name": "Tenserflow/Keras",
+    "tag_type": "Tech",
+    "color": "#B1B2FF"
+  },
+  {
+    "_id": 6,
+    "name": "Django",
+    "tag_type": "Tech",
+    "color": "#AAC4FF"
+  },
+  {
+    "_id": 7,
+    "name": "ReactJs",
+    "tag_type": "Tech",
+    "color": "#D2DAFF"
+  },
+  {
+    "_id": 8,
+    "name": "VueJs",
+    "tag_type": "Tech",
+    "color": "#EEF1FF"
+  },
+  {
+    "_id": 9,
+    "name": "Html/CSS",
+    "tag_type": "Tech",
+    "color": "#A7D2CB"
+  },
+  {
+    "_id": 10,
+    "name": "Scikit-learn",
+    "tag_type": "Tech",
+    "color": "#F2D388"
+  },
+  {
+    "_id": 11,
+    "name": "Numpy",
+    "tag_type": "Tech",
+    "color": "#C98474"
+  },
+  {
+    "_id": 12,
+    "name": "Rust",
+    "tag_type": "Tech",
+    "color": "#874C62"
+  },
+  {
+    "_id": 13,
+    "name": "Odoo",
+    "tag_type": "Tech",
+    "color": "#9CB4CC"
+  },
+  {
+    "_id": 14,
+    "name": "Linux",
+    "tag_type": "Tech",
+    "color": "#F2D7D9"
+  },
+  {
+    "_id": 15,
+    "name": "C",
+    "tag_type": "Tech",
+    "color": "#D3CEDF"
+  },
+  {
+    "_id": 16,
+    "name": "Raspberry Pi",
+    "tag_type": "Tech",
+    "color": "#748DA6"
+  },
+  {
+    "_id": 17,
+    "name": "Android",
+    "tag_type": "Tech",
+    "color": "#B1B2FF"
+  },
+  {
+    "_id": 18,
+    "name": "PostgreSQL",
+    "tag_type": "Tech",
+    "color": "#AAC4FF"
+  },
+  {
+    "_id": 19,
+    "name": "MongoDB",
+    "tag_type": "Tech",
+    "color": "#D2DAFF"
+  },
+  {
+    "_id": 20,
+    "name": "Neo4J",
+    "tag_type": "Tech",
+    "color": "#EEF1FF"
+  },
+  {
+    "_id": 21,
+    "name": "NuxtJs",
+    "tag_type": "Tech",
+    "color": "#A7D2CB"
+  },
+  {
+    "_id": 22,
+    "name": "NextJs",
+    "tag_type": "Tech",
+    "color": "#F2D388"
+  },
+  {
+    "_id": 23,
+    "name": "NestJs",
+    "tag_type": "Tech",
+    "color": "#C98474"
+  },
+  {
+    "_id": 24,
+    "name": "GraphQL",
+    "tag_type": "Tech",
+    "color": "#874C62"
+  },
+  {
+    "_id": 25,
+    "name": "Docker",
+    "tag_type": "Tech",
+    "color": "#9CB4CC"
+  },
+  {
+    "_id": 26,
+    "name": "Professionel",
+    "tag_type": "Experience",
+    "color": "#F2D7D9"
+  },
+  {
+    "_id": 27,
+    "name": "Académique",
+    "tag_type": "Experience",
+    "color": "#D3CEDF"
+  },
+  {
+    "_id": 28,
+    "name": "Projet personnel",
+    "tag_type": "Experience",
+    "color": "#748DA6"
+  }
+]

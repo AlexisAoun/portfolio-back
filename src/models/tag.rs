@@ -4,7 +4,6 @@ use rocket::serde::{Deserialize, Serialize};
 enum TagType {
     Tech,
     Experience,
-    Domaine,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
