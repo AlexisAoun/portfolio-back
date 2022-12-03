@@ -1,0 +1,596 @@
+[
+  {
+    "_id": 1,
+    "title": {
+      "fr": "Histogram Image Search",
+      "en": "Histogram Image Search"
+    },
+    "content": {
+      "fr": "Ce projet est à la base académique dans le cadre de mes études à l'IMT Nord Europe que j'ai ensuite décidé de reprendre et de développer. Le but de celui-ci est la recherche d'image par similarité de leur histogramme. <br> L'utilisateur donne au programme une image et celui va comparer son histogramme contre une base de donnée d'image prédifini et trouver celle qui lui correspond le mieux. Pour ce faire on utilise une technique d'apprentissage supervisé, l'algorithme des n-plus-proches voisins (Knn en anglais).<br> Dans une première étape on va vectoriser notre histogramme (voir la figure), puis on va calculer la distance entre ce vecteur et tous les autres vecteurs correspondants aux entrés de la banque d'image. Les n images les plus proches sont renvoyés à l'utilisateur.<br> Le programme propose également trois modes de performances. La recherche brutte, la plus précise mais la plus lente, le mode LSH qui est un algorithme d'indexation permettant de rendre le traitement plus rapide, et enfin le mode réduction de dimension, qui comme son nom l'indique réduit la dimension du vecteur pour rendre la recherche encore plus rapide, aux dépends de la précision des résultats. <br>La logique du programme a été développé et une interface graphique est en cours de développmenet.",
+      "en": ""
+    },
+    "images_url": [
+      "his.png"
+    ],
+    "tags": [
+      {
+        "_id": 1,
+        "name": "Python",
+        "tag_type": "Tech",
+        "color": "#9CB4CC"
+      },
+      {
+        "_id": 10,
+        "name": "Scikit-learn",
+        "tag_type": "Tech",
+        "color": "#F2D388"
+      },
+      {
+        "_id": 11,
+        "name": "Numpy",
+        "tag_type": "Tech",
+        "color": "#C98474"
+      },
+      {
+        "_id": 27,
+        "name": "Académique",
+        "tag_type": "Experience",
+        "color": "#D3CEDF"
+      },
+      {
+        "_id": 28,
+        "name": "Personnel",
+        "tag_type": "Experience",
+        "color": "#748DA6"
+      }
+    ],
+    "sourcecode_link": "https://github.com/AlexisAoun/HistogramImageSearch",
+    "value": 0
+  },
+  {
+    "_id": 2,
+    "title": {
+      "fr": "Stage en Business Intelligence - Setelia",
+      "en": ""
+    },
+    "content": {
+      "fr": "A l'occasion de mon stage de deuxième année j'ai eu l'opportunité de travailler chez Setelia, une entreprise de consulting en IT, plus précisement dans la branche Business Intelligence au Liban. <br> Durant celui-ci j'ai appris les bases de la BI avec le logiciel QlikSense. J'ai également été introduit aux principes d'ETL (extract, transform, load) et de warehousing. J'ai aussi eu la chance d'appliquer ces nouvelles connaissances acquises dans des projets clients. <br> Ce stage eu un grand impact sur mon parcours car c'est cette expèrience qui m'a définitivement convaincu de me spécialiser en data science. C'est là où j'ai ouvert les yeux sur l'importance et la nécessité pour les entreprises d'avoir les données les plus à jours, présentées de la manière la plus explicite et claire possible, afin de prendre des décisions managériales pertinentes.",
+      "en": ""
+    },
+    "images_url": [
+      "qliksense.png"
+    ],
+    "tags": [
+      {
+        "_id": 4,
+        "name": "QlikSense",
+        "tag_type": "Tech",
+        "color": "#748DA6"
+      },
+      {
+        "_id": 26,
+        "name": "Professionel",
+        "tag_type": "Experience",
+        "color": "#F2D7D9"
+      }
+    ],
+    "value": 0
+  },
+  {
+    "_id": 3,
+    "title": {
+      "fr": "Music Genre Predictor",
+      "en": ""
+    },
+    "content": {
+      "fr": "Music Genre Predictor est un projet de reconnaissance de genre de la musique. Celui-ci est basé sur un système neuronnal développé avec keras et tenserflow sous python. A l'heure actuelle le modèle ne prend en compte que les métadatas des musiques (récupérées avec l'API de spotify). Actuellement la précision du modèle est de 42%. Ce projet est à la base académique et je plannifie de le reprendre afin d'introduire l'analyse de la donnée audio au modèle afin d'en améliorer la précision.",
+      "en": ""
+    },
+    "images_url": [],
+    "tags": [
+      {
+        "_id": 1,
+        "name": "Python",
+        "tag_type": "Tech",
+        "color": "#9CB4CC"
+      },
+      {
+        "_id": 5,
+        "name": "Tenserflow/Keras",
+        "tag_type": "Tech",
+        "color": "#B1B2FF"
+      },
+      {
+        "_id": 11,
+        "name": "Numpy",
+        "tag_type": "Tech",
+        "color": "#C98474"
+      },
+      {
+        "_id": 27,
+        "name": "Académique",
+        "tag_type": "Experience",
+        "color": "#D3CEDF"
+      },
+      {
+        "_id": 28,
+        "name": "Personnel",
+        "tag_type": "Experience",
+        "color": "#748DA6"
+      }
+    ],
+    "sourcecode_link": "https://github.com/AlexisAoun/MusicGenrePredictor",
+    "value": 0
+  },
+  {
+    "_id": 4,
+    "title": {
+      "fr": "Rust MNIST",
+      "en": ""
+    },
+    "content": {
+      "fr": "Comming soon !",
+      "en": ""
+    },
+    "images_url": [],
+    "tags": [
+      {
+        "_id": 5,
+        "name": "Tenserflow/Keras",
+        "tag_type": "Tech",
+        "color": "#B1B2FF"
+      },
+      {
+        "_id": 12,
+        "name": "Rust",
+        "tag_type": "Tech",
+        "color": "#874C62"
+      }
+    ],
+    "value": 10
+  },
+  {
+    "_id": 5,
+    "title": {
+      "fr": "Mon portfolio",
+      "en": ""
+    },
+    "content": {
+      "fr": "Le site sur lequel vous êtes maintenant ! Le client frontend est développé en VueJS et packagé avec Vite. Mais la partie intéressante de ce projet réside dans le serveur backend. Il a été développé avec Rust et la librairie Rocket rs, couplé à une base de donnée MongoDB. Overkill pour un projet de cet envergure ? Complètement, mais là n'est pas la question. Mon objectif avec ce choix était d'apprendre à utiliser Rust qui est un langage qui m'a toujours attiré mais que je n'avais jamais eu l'occasion d'utiliser auparavant. Maintenant c'est chose faite et je dois dire que c'est sans aucun doute l'une des technologies qui m'a le plus donnée de difficutlés à appréhender. Cependant le jeu en valait la chandelle puisque Rust est aujourd'hui mon langague de programmation préféré. Mon object à présent est de l'introduire dans d'autres projets, de data notamment.",
+      "en": ""
+    },
+    "images_url": [],
+    "tags": [
+      {
+        "_id": 12,
+        "name": "Rust",
+        "tag_type": "Tech",
+        "color": "#874C62"
+      },
+      {
+        "_id": 8,
+        "name": "VueJs",
+        "tag_type": "Tech",
+        "color": "#EEF1FF"
+      },
+      {
+        "_id": 19,
+        "name": "MongoDB",
+        "tag_type": "Tech",
+        "color": "#D2DAFF"
+      },
+      {
+        "_id": 25,
+        "name": "Docker",
+        "tag_type": "Tech",
+        "color": "#9CB4CC"
+      },
+      {
+        "_id": 28,
+        "name": "Personnel",
+        "tag_type": "Experience",
+        "color": "#748DA6"
+      }
+    ],
+    "sourcecode_link": "https://github.com/AlexisAoun/portfolio-back",
+    "value": 1
+  },
+  {
+    "_id": 6,
+    "title": {
+      "fr": "Stage en développement web - Atos",
+      "en": ""
+    },
+    "content": {
+      "fr": "Dans le cadre de mon stage de M1 j'ai travaillé en tant que développeur d'application web pendant 4 mois au sein d'Atos, une multinationale dans le domaine du numérique. J'ai eu l'occasion de contribuer à trois projets : MPP Dashboard qui est une application devant rappeler automatiquement par mail les employés d'accomplir des demandes administratives, Tickeratops qui est un outil de gestion de tickets et d'automatisation de tâches de devOps, et enfin le projet client UGAP où je suis intervenu dans la rénovation de l'interface graphique d'un site web. J'ai acquis un large panel de compétences techniques dans le domaine des applications web à la fois pour le développement d'interface graphique et dans la programmation de serveur web gérant les données.Je me suis aussi et surtout familiarisé avec les méthodes Agiles pour la gestion des projets et des équipes.",
+      "en": ""
+    },
+    "images_url": [
+      "logo_atos.png"
+    ],
+    "tags": [
+      {
+        "_id": 3,
+        "name": "Javascript/Typescript",
+        "tag_type": "Tech",
+        "color": "#D3CEDF"
+      },
+      {
+        "_id": 7,
+        "name": "ReactJs",
+        "tag_type": "Tech",
+        "color": "#D2DAFF"
+      },
+      {
+        "_id": 8,
+        "name": "VueJs",
+        "tag_type": "Tech",
+        "color": "#EEF1FF"
+      },
+      {
+        "_id": 9,
+        "name": "Html/CSS",
+        "tag_type": "Tech",
+        "color": "#A7D2CB"
+      },
+      {
+        "_id": 18,
+        "name": "PostgreSQL",
+        "tag_type": "Tech",
+        "color": "#AAC4FF"
+      },
+      {
+        "_id": 19,
+        "name": "MongoDB",
+        "tag_type": "Tech",
+        "color": "#D2DAFF"
+      },
+      {
+        "_id": 21,
+        "name": "NuxtJs",
+        "tag_type": "Tech",
+        "color": "#A7D2CB"
+      },
+      {
+        "_id": 22,
+        "name": "NextJs",
+        "tag_type": "Tech",
+        "color": "#F2D388"
+      },
+      {
+        "_id": 23,
+        "name": "NestJs",
+        "tag_type": "Tech",
+        "color": "#C98474"
+      },
+      {
+        "_id": 24,
+        "name": "GraphQL",
+        "tag_type": "Tech",
+        "color": "#874C62"
+      },
+      {
+        "_id": 25,
+        "name": "Docker",
+        "tag_type": "Tech",
+        "color": "#9CB4CC"
+      },
+      {
+        "_id": 26,
+        "name": "Professionel",
+        "tag_type": "Experience",
+        "color": "#F2D7D9"
+      }
+    ],
+    "value": 1
+  },
+  {
+    "_id": 7,
+    "title": {
+      "fr": "Stage en développement web - Les grains de sel",
+      "en": ""
+    },
+    "content": {
+      "fr": "Pour mon stage de L3 j’ai passé 12 semaines avec le supermarché coopératif les Grains de Sel. J’ai travaillé en tant que développeur sur les différents outils, développés avec Odoo et Django, utilisés pour la réception de commandes, la gestion des membres de la coopérative ou encore la gestion des caisses. Dans un premier temps j’ai effectué des tâches de maintenance sur le code source avec des corrections de bugs et l’introduction de fonctionnalités simples. Cela m’a permis de me familiariser avec le code source et l’environnement de développement utilisés avec tous les outils et les technologies qui l’accompagnent. Après cela j’ai mis en place les bases pour l’implémentation de tests automatiques avec quelques tests unitaires simples. L’objectif étant qu’à l’avenir les personnes travaillant sur ce projet rajoutent par eux-même d’autres tests unitaires ou d’intégrations afin d’arriver à un stade où un nombre conséquent de bugs pourront être détecter avant le passage sur serveur test ou encore pire en production. En découlera un travail de développement plus agréable avec moins de corrections de bugs tardifs et surtout une suite de logiciels plus stable et plus facile à maintenir dans son ensemble. Ce stage fut aussi pour moi l’occasion d’exercer mes capacités relationnelles, ayant travaillé avec deux entités, la coopérative elle-même avec des informaticiens bénévoles et le prestataire informatique du supermarché. Certains désaccords existaient entre les deux partis impactant plus ou moins directement mon travail. J’ai donc eu a dialogué avec tout le monde,a trouvé des solutions en partageant les arguments des un et des autres pour faire avancer les choses dans le bon sens. J’espère que, outre mon apport technique à la coopérative, ce travail de communication aura des effets permanents sur leurs manières d’interagir et de développer leurs logiciels afin que les Grains de Sel puissent continuer à avoir un système informatique s’alignant avec leurs idées, libre et ouvert à tous.",
+      "en": ""
+    },
+    "images_url": [
+      "logo_lgds.jpg"
+    ],
+    "tags": [
+      {
+        "_id": 3,
+        "name": "Javascript/Typescript",
+        "tag_type": "Tech",
+        "color": "#D3CEDF"
+      },
+      {
+        "_id": 6,
+        "name": "Django",
+        "tag_type": "Tech",
+        "color": "#AAC4FF"
+      },
+      {
+        "_id": 1,
+        "name": "Python",
+        "tag_type": "Tech",
+        "color": "#9CB4CC"
+      },
+      {
+        "_id": 13,
+        "name": "Odoo",
+        "tag_type": "Tech",
+        "color": "#9CB4CC"
+      }
+    ],
+    "value": 2
+  },
+  {
+    "_id": 8,
+    "title": {
+      "fr": "Grapheur mathématique",
+      "en": ""
+    },
+    "content": {
+      "fr": "Programme codé en C avec la librairie openGl qui évalue et trace la courbe d'une fonction mathématique. Nous étions un groupe de 8 personnes dont j'étais le chef de projet, et nous avions 2 semaines afin de réaliser cette application.",
+      "en": ""
+    },
+    "images_url": [
+      "grapheur.jpg"
+    ],
+    "tags": [
+      {
+        "_id": 15,
+        "name": "C",
+        "tag_type": "Tech",
+        "color": "#D3CEDF"
+      },
+      {
+        "_id": 27,
+        "name": "Académique",
+        "tag_type": "Experience",
+        "color": "#D3CEDF"
+      }
+    ],
+    "sourcecode_link": "https://github.com/AlexisAoun/grapheur_L2",
+    "value": 2
+  },
+  {
+    "_id": 9,
+    "title": {
+      "fr": "Station pour chat",
+      "en": ""
+    },
+    "content": {
+      "fr": "Ce projet a pour but de pouvoir connaitre la quantité de nourriture et d'eau restante à notre chat ainsi que de le voir à travers une caméra à partir d'une application Android. Ce projet fut divisé en deux grandes parties : la station de mesure de la quantité de nourriture et d'eau et l'application mobile. Pour la première partie une raspberry pi a été utilisée, avec des capteurs de poids pour mesurer la quantité de nourriture et d'eau restante ainsi qu'une caméra connectée à celle-ci prenant des photos à interval régulier. Toutes les données sont ensuite envoyées à un serveur et une base de donnée PostgreSQL. On en vient à la deuxième partie, l'application Android qui récupère ces données et les affiche à l'utilisateur ",
+      "en": ""
+    },
+    "images_url": [
+      "cat_app.jpg",
+      "cat_station.jpg"
+    ],
+    "tags": [
+      {
+        "_id": 1,
+        "name": "Python",
+        "tag_type": "Tech",
+        "color": "#9CB4CC"
+      },
+      {
+        "_id": 2,
+        "name": "Java",
+        "tag_type": "Tech",
+        "color": "#F2D7D9"
+      },
+      {
+        "_id": 16,
+        "name": "Raspberry Pi",
+        "tag_type": "Tech",
+        "color": "#748DA6"
+      },
+      {
+        "_id": 17,
+        "name": "Android",
+        "tag_type": "Tech",
+        "color": "#B1B2FF"
+      },
+      {
+        "_id": 18,
+        "name": "PostgreSQL",
+        "tag_type": "Tech",
+        "color": "#AAC4FF"
+      },
+      {
+        "_id": 28,
+        "name": "Personnel",
+        "tag_type": "Experience",
+        "color": "#748DA6"
+      }
+    ],
+    "value": 1
+  },
+  {
+    "_id": 10,
+    "title": {
+      "fr": "Gestionnaire d'évènement - Les Grains De Sels",
+      "en": ""
+    },
+    "content": {
+      "fr": "Dans le cadre de mon projet ouvert de L3 j'ai travaillé sur une application web de gestion d'évènements pour le marché coopératif Les Grains De Sel. J'étais chargé du backend sur ce projet qui a été réalisé avec le framework Django. J'étais aussi chargé de synchroniser toutes les données avec une base de données pré-existante utilisant l'ERP Odoo. C'est aussi durant ce projet que j'ai appris à utiliser l'outil de conteneurisation Docker. Mon travail ayant été jugé de qualité par Les Grains de Sels, ils m'ont pris en tant que stagiaire cette année là.",
+      "en": ""
+    },
+    "images_url": [
+      "lgds.jpg"
+    ],
+    "tags": [
+      {
+        "_id": 6,
+        "name": "Django",
+        "tag_type": "Tech",
+        "color": "#AAC4FF"
+      },
+      {
+        "_id": 13,
+        "name": "Odoo",
+        "tag_type": "Tech",
+        "color": "#9CB4CC"
+      },
+      {
+        "_id": 25,
+        "name": "Docker",
+        "tag_type": "Tech",
+        "color": "#9CB4CC"
+      },
+      {
+        "_id": 27,
+        "name": "Académique",
+        "tag_type": "Experience",
+        "color": "#D3CEDF"
+      }
+    ],
+    "value": 1
+  },
+  {
+    "_id": 11,
+    "title": {
+      "fr": "Échange académique à l'Université de Laval - Québec",
+      "en": ""
+    },
+    "content": {
+      "fr": "Durant mon premier semestre de M2, j'ai effectué un échange académique de 4 mois à l'université de Laval au québec. <br> Durant cette pèriode, j'ai approfondi mes connaissances dans deux domaines : L'architecture logiciel dans le paradigme OO (en java dans ce cas) avec les principes GRASP et SOLID, et en base de données avancée. <br> Dans ce dernier j'ai appris les fondamentaux de l'architecture Lambda, je me suis familiarisé avec ElasticSearch et les bases de données orientées graphe comme Neo4j, le tout à travers de micros-projets.",
+      "en": ""
+    },
+    "images_url": [
+      "logo_ulaval.jpg"
+    ],
+    "tags": [
+      {
+        "_id": 2,
+        "name": "Java",
+        "tag_type": "Tech",
+        "color": "#F2D7D9"
+      },
+      {
+        "_id": 19,
+        "name": "MongoDB",
+        "tag_type": "Tech",
+        "color": "#D2DAFF"
+      },
+      {
+        "_id": 20,
+        "name": "Neo4J",
+        "tag_type": "Tech",
+        "color": "#EEF1FF"
+      },
+      {
+        "_id": 27,
+        "name": "Académique",
+        "tag_type": "Experience",
+        "color": "#D3CEDF"
+      }
+    ],
+    "value": 2
+  },
+  {
+    "_id": 12,
+    "title": {
+      "fr": "Site internet du comité d'acceuil à l'IMT Nord Europe",
+      "en": ""
+    },
+    "content": {
+      "fr": "Durant mon parcours en école d'ingénieur j'ai été présent dans bon nombre d'assocations dont le comité d'accueil des nouveaux arrivants, ou CAPA. <br> J'étais le responsable logistique et aussi à la tête d'une équipe de trois développeurs pour la refonte du site web de l'association qui montrait des signes d'ages avancés dans son design. Nous l'avons codé en html/css/javascript pure afin qu'il reste accessible au plus grand nombre pour les futures développeurs qui nous suivront. Cette objectif à été atteint puisque le CAPA 2022 s'est basé sur notre code.",
+      "en": ""
+    },
+    "images_url": [],
+    "tags": [
+      {
+        "_id": 9,
+        "name": "Html/CSS",
+        "tag_type": "Tech",
+        "color": "#A7D2CB"
+      },
+      {
+        "_id": 3,
+        "name": "Javascript/Typescript",
+        "tag_type": "Tech",
+        "color": "#D3CEDF"
+      },
+      {
+        "_id": 28,
+        "name": "Personnel",
+        "tag_type": "Experience",
+        "color": "#748DA6"
+      }
+    ],
+    "sourcecode_link": "https://github.com/AlexisAoun/capa2021",
+    "demo_link": "https://alexisaoun.github.io/capa2021/",
+    "value": 1
+  },
+  {
+    "_id": 13,
+    "title": {
+      "fr": "Générateur d'images aléatoires",
+      "en": ""
+    },
+    "content": {
+      "fr": "Programme codé en Java générant une image à partir de formules mathématiques choisies de manière aléatoire. Parfait pour obtenir des fonds d'écrans uniques et originaux !",
+      "en": ""
+    },
+    "images_url": [
+      "randomImageGenerator.jpg"
+    ],
+    "tags": [
+      {
+        "_id": 2,
+        "name": "Java",
+        "tag_type": "Tech",
+        "color": "#F2D7D9"
+      },
+      {
+        "_id": 27,
+        "name": "Académique",
+        "tag_type": "Experience",
+        "color": "#D3CEDF"
+      }
+    ],
+    "sourcecode_link": "https://github.com/AlexisAoun/RandomImageGenerator",
+    "value": 3
+  },
+  {
+    "_id": 14,
+    "title": {
+      "fr": "Dotfiles et configuration linux",
+      "en": ""
+    },
+    "content": {
+      "fr": "Je suis un grand amateur de systèmes linux et unix en général. Mon OS de tous les jours est la distribition de linux ArchLinux (btw), avec le window manager DWM que j'apprécie tout particulièment pour sa légerté et la possibilité de le configurer directement en modifiant son code source en C. J'ai également une configuration personnel de neovim que j'utilise en duo avec tmux pour consituer mon environnement de travail. Tous mes dotfiles peuvent être touver sur mon github !",
+      "en": ""
+    },
+    "images_url": [
+      "arch1.jpg",
+      "arch2.jpg"
+    ],
+    "tags": [
+      {
+        "_id": 14,
+        "name": "Linux",
+        "tag_type": "Tech",
+        "color": "#F2D7D9"
+      },
+      {
+        "_id": 15,
+        "name": "C",
+        "tag_type": "Tech",
+        "color": "#D3CEDF"
+      },
+      {
+        "_id": 28,
+        "name": "Personnel",
+        "tag_type": "Experience",
+        "color": "#748DA6"
+      }
+    ],
+    "sourcecode_link": "https://github.com/AlexisAoun/dotfiles",
+    "value": 1
+  }
+]
