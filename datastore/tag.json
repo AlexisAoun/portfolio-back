@@ -166,5 +166,17 @@
     "name": "Personnel",
     "tag_type": "Experience",
     "color": "#748DA6"
+  },
+  {
+    "_id": 29,
+    "name": "Pandas",
+    "tag_type": "Tech",
+    "color": "#F2D388"
+  },
+  {
+    "_id": 30,
+    "name": "Elastic Search",
+    "tag_type": "Tech",
+    "color": "#A7D2CB"
   }
 ]

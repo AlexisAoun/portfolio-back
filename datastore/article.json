@@ -6,7 +6,7 @@
       "en": "Histogram Image Search"
     },
     "content": {
-      "fr": "Ce projet est à la base académique dans le cadre de mes études à l'IMT Nord Europe que j'ai ensuite décidé de reprendre et de développer. Le but de celui-ci est la recherche d'image par similarité de leur histogramme. <br> L'utilisateur donne au programme une image et celui va comparer son histogramme contre une base de donnée d'image prédifini et trouver celle qui lui correspond le mieux. Pour ce faire on utilise une technique d'apprentissage supervisé, l'algorithme des n-plus-proches voisins (Knn en anglais).<br> Dans une première étape on va vectoriser notre histogramme (voir la figure), puis on va calculer la distance entre ce vecteur et tous les autres vecteurs correspondants aux entrés de la banque d'image. Les n images les plus proches sont renvoyés à l'utilisateur.<br> Le programme propose également trois modes de performances. La recherche brutte, la plus précise mais la plus lente, le mode LSH qui est un algorithme d'indexation permettant de rendre le traitement plus rapide, et enfin le mode réduction de dimension, qui comme son nom l'indique réduit la dimension du vecteur pour rendre la recherche encore plus rapide, aux dépends de la précision des résultats. <br>La logique du programme a été développé et une interface graphique est en cours de développmenet.",
+      "fr": "Ce projet est à la base académique dans le cadre de mes études à l'IMT Nord Europe que j'ai ensuite décidé de reprendre et de développer. Le but de celui-ci est la recherche d'image par similarité de leur histogramme. <br> L'utilisateur donne une image au programme qui va comparer son histogramme contre une base de donnée d'image prédifini et trouver celle qui lui correspond le mieux. Pour ce faire on utilise une technique d'apprentissage supervisé, l'algorithme des n-plus-proches voisins (Knn en anglais).<br> Dans un premier temps on va vectoriser notre histogramme (voir la figure), puis on va calculer la distance entre ce vecteur et tous les autres vecteurs correspondants aux entrés de la banque d'image. Les n images les plus proches sont renvoyés à l'utilisateur.<br> Le programme propose également trois modes de performances. La recherche brutte, la plus précise mais la plus lente, le mode LSH qui est un algorithme d'indexation permettant de rendre le traitement plus rapide, et enfin le mode réduction de dimension, qui comme son nom l'indique réduit la dimension du vecteur pour rendre la recherche encore plus rapide, aux dépends de la précision des résultats. <br>La logique du programme a été développé et une interface graphique est en cours de développement.",
       "en": ""
     },
     "images_url": [
@@ -54,7 +54,7 @@
       "en": ""
     },
     "content": {
-      "fr": "A l'occasion de mon stage de deuxième année j'ai eu l'opportunité de travailler chez Setelia, une entreprise de consulting en IT, plus précisement dans la branche Business Intelligence au Liban. <br> Durant celui-ci j'ai appris les bases de la BI avec le logiciel QlikSense. J'ai également été introduit aux principes d'ETL (extract, transform, load) et de warehousing. J'ai aussi eu la chance d'appliquer ces nouvelles connaissances acquises dans des projets clients. <br> Ce stage eu un grand impact sur mon parcours car c'est cette expèrience qui m'a définitivement convaincu de me spécialiser en data science. C'est là où j'ai ouvert les yeux sur l'importance et la nécessité pour les entreprises d'avoir les données les plus à jours, présentées de la manière la plus explicite et claire possible, afin de prendre des décisions managériales pertinentes.",
+      "fr": "A l'occasion de mon stage de deuxième année j'ai eu l'opportunité de travailler chez Setelia, une entreprise de consulting en IT, plus précisement dans la branche Business Intelligence au Liban. <br> Durant celui-ci j'ai appris les bases de la BI avec le logiciel QlikSense. J'ai également été introduit aux principes d'ETL (extract, transform, load) et de warehousing de donnée. J'ai aussi eu la chance d'appliquer ces nouvelles connaissances acquises dans le cadre d'un projet client. <br> Ce stage a eu un grand impact sur mon parcours car c'est cette expèrience qui m'a définitivement convaincu de me spécialiser en data. C'est là où j'ai ouvert les yeux sur l'importance et la nécessité pour les entreprises d'avoir les données les plus à jours, présentées de la manière la plus explicite et claire possible, afin de prendre des décisions managériales pertinentes.",
       "en": ""
     },
     "images_url": [
@@ -107,6 +107,12 @@
         "color": "#C98474"
       },
       {
+        "_id": 29,
+        "name": "Pandas",
+        "tag_type": "Tech",
+        "color": "#F2D388"
+      },
+      {
         "_id": 27,
         "name": "Académique",
         "tag_type": "Experience",
@@ -129,7 +135,7 @@
       "en": ""
     },
     "content": {
-      "fr": "Comming soon !",
+      "fr": "Coming soon !",
       "en": ""
     },
     "images_url": [],
@@ -156,7 +162,7 @@
       "en": ""
     },
     "content": {
-      "fr": "Le site sur lequel vous êtes maintenant ! Le client frontend est développé en VueJS et packagé avec Vite. Mais la partie intéressante de ce projet réside dans le serveur backend. Il a été développé avec Rust et la librairie Rocket rs, couplé à une base de donnée MongoDB. Overkill pour un projet de cet envergure ? Complètement, mais là n'est pas la question. Mon objectif avec ce choix était d'apprendre à utiliser Rust qui est un langage qui m'a toujours attiré mais que je n'avais jamais eu l'occasion d'utiliser auparavant. Maintenant c'est chose faite et je dois dire que c'est sans aucun doute l'une des technologies qui m'a le plus donnée de difficutlés à appréhender. Cependant le jeu en valait la chandelle puisque Rust est aujourd'hui mon langague de programmation préféré. Mon object à présent est de l'introduire dans d'autres projets, de data notamment.",
+      "fr": "Le site sur lequel vous êtes maintenant ! Le client frontend est développé en VueJS et packagé avec Vite. Mais la partie intéressante de ce projet réside dans le serveur backend. Il a été développé avec Rust et la librairie Rocket rs, couplé à une base de donnée MongoDB. Overkill pour un projet de cet envergure ? Complètement, mais là n'est pas la question. Mon objectif avec ce choix était d'apprendre à utiliser Rust qui est un langage qui m'a toujours attiré mais que je n'avais jamais eu l'occasion d'utiliser auparavant. Maintenant c'est chose faite et je dois dire que c'est sans aucun doute l'une des technologies qui m'a le plus donnée de difficutlés à appréhender. Cependant le jeu en valait la chandelle puisque Rust est aujourd'hui mon langague de programmation préféré. Mon but à présent est de l'introduire dans d'autres projets, de data notamment.",
       "en": ""
     },
     "images_url": [],
@@ -202,7 +208,7 @@
       "en": ""
     },
     "content": {
-      "fr": "Dans le cadre de mon stage de M1 j'ai travaillé en tant que développeur d'application web pendant 4 mois au sein d'Atos, une multinationale dans le domaine du numérique. J'ai eu l'occasion de contribuer à trois projets : MPP Dashboard qui est une application devant rappeler automatiquement par mail les employés d'accomplir des demandes administratives, Tickeratops qui est un outil de gestion de tickets et d'automatisation de tâches de devOps, et enfin le projet client UGAP où je suis intervenu dans la rénovation de l'interface graphique d'un site web. J'ai acquis un large panel de compétences techniques dans le domaine des applications web à la fois pour le développement d'interface graphique et dans la programmation de serveur web gérant les données.Je me suis aussi et surtout familiarisé avec les méthodes Agiles pour la gestion des projets et des équipes.",
+      "fr": "Dans le cadre de mon stage de M1 j'ai travaillé en tant que développeur d'application web pendant 5 mois au sein d'Atos, une multinationale dans le domaine du numérique. J'ai eu l'occasion de contribuer à trois projets : MPP Dashboard qui est une application devant rappeler automatiquement par mail les employés d'accomplir des demandes administratives, Tickeratops qui est un outil de gestion de tickets et d'automatisation de tâches de devOps, et enfin le projet client UGAP où je suis intervenu dans la rénovation de l'interface graphique d'un site web. J'ai acquis un large panel de compétences techniques dans le domaine des applications web à la fois pour le développement d'interface graphique et dans la programmation de serveur web gérant les données. Je me suis aussi et surtout familiarisé avec les méthodes Agiles pour la gestion des projets et des équipes.",
       "en": ""
     },
     "images_url": [
@@ -416,7 +422,7 @@
       "en": ""
     },
     "content": {
-      "fr": "Dans le cadre de mon projet ouvert de L3 j'ai travaillé sur une application web de gestion d'évènements pour le marché coopératif Les Grains De Sel. J'étais chargé du backend sur ce projet qui a été réalisé avec le framework Django. J'étais aussi chargé de synchroniser toutes les données avec une base de données pré-existante utilisant l'ERP Odoo. C'est aussi durant ce projet que j'ai appris à utiliser l'outil de conteneurisation Docker. Mon travail ayant été jugé de qualité par Les Grains de Sels, ils m'ont pris en tant que stagiaire cette année là.",
+      "fr": "Dans le cadre de mon projet ouvert de L3 j'ai travaillé sur une application web de gestion d'évènements pour le marché coopératif Les Grains De Sel. J'étais chargé du backend sur ce projet qui a été réalisé avec le framework Django. J'étais aussi chargé de synchroniser toutes les données avec une base de données pré-existante utilisant l'ERP Odoo. C'est aussi durant ce projet que j'ai appris à utiliser l'outil de conteneurisation Docker. Mon travail ayant été jugé de qualité par Les Grains de Sels, ils m'ont embauché en tant que stagiaire cette année là.",
       "en": ""
     },
     "images_url": [
@@ -448,6 +454,7 @@
         "color": "#D3CEDF"
       }
     ],
+    "sourcecode_link": "https://github.com/alexandrelam/lesgrainsdesel",
     "value": 1
   },
   {
@@ -457,7 +464,7 @@
       "en": ""
     },
     "content": {
-      "fr": "Durant mon premier semestre de M2, j'ai effectué un échange académique de 4 mois à l'université de Laval au québec. <br> Durant cette pèriode, j'ai approfondi mes connaissances dans deux domaines : L'architecture logiciel dans le paradigme OO (en java dans ce cas) avec les principes GRASP et SOLID, et en base de données avancée. <br> Dans ce dernier j'ai appris les fondamentaux de l'architecture Lambda, je me suis familiarisé avec ElasticSearch et les bases de données orientées graphe comme Neo4j, le tout à travers de micros-projets.",
+      "fr": "Durant mon premier semestre de M2, j'ai effectué un échange académique de 4 mois à l'université de Laval au Québec. <br> Durant cette pèriode, j'ai approfondi mes connaissances dans deux domaines : L'architecture logiciel dans le paradigme OO (en java dans ce cas) avec les principes GRASP et SOLID, et en base de données avancée. <br> Dans ce dernier j'ai appris les fondamentaux de l'architecture Lambda, je me suis familiarisé avec ElasticSearch et les bases de données orientées graphe comme Neo4j, le tout à travers de micros-projets.",
       "en": ""
     },
     "images_url": [
@@ -483,6 +490,12 @@
         "color": "#EEF1FF"
       },
       {
+        "_id": 30,
+        "name": "Elastic Search",
+        "tag_type": "Tech",
+        "color": "#A7D2CB"
+      },
+      {
         "_id": 27,
         "name": "Académique",
         "tag_type": "Experience",
@@ -494,7 +507,7 @@
   {
     "_id": 12,
     "title": {
-      "fr": "Site internet du comité d'acceuil à l'IMT Nord Europe",
+      "fr": "Site internet du comité d'accueil à l'IMT Nord Europe",
       "en": ""
     },
     "content": {
