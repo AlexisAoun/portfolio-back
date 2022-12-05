@@ -1,5 +1,4 @@
 use crate::models::article::Article;
-use crate::models::counter::Counter;
 use crate::models::tag::Tag;
 use mongodb::{Client, Collection, Database};
 
@@ -20,9 +19,4 @@ pub async fn get_article_collection() -> Collection<Article> {
 pub async fn get_tag_collection() -> Collection<Tag> {
     let db = get_db().await;
     db.collection::<Tag>("tag")
-}
-
-pub async fn get_counter_collection() -> Collection<Counter> {
-    let db = get_db().await;
-    db.collection::<Counter>("counter")
 }
