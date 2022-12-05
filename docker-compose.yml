@@ -3,6 +3,7 @@ version: '3.1'
 services:
 
   db:
+    container_name: portfolio-db
     image: mongo
     restart: always
     ports: 
@@ -12,16 +13,17 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: root
     volumes:
       - portfolio-db:/data/db
+      - ./datastore:/home/mongodb
 
-  db-portal:
-    image: mongo-express
-    restart: always
-    ports:
-      - 8081:8081
-    environment:
-      ME_CONFIG_MONGODB_ADMINUSERNAME: root
-      ME_CONFIG_MONGODB_ADMINPASSWORD: root
-      ME_CONFIG_MONGODB_URL: mongodb://root:root@db:27017/
+  # db-portal:
+  #   image: mongo-express
+  #   restart: always
+  #   ports:
+  #     - 8081:8081
+  #   environment:
+  #     ME_CONFIG_MONGODB_ADMINUSERNAME: root
+  #     ME_CONFIG_MONGODB_ADMINPASSWORD: root
+  #     ME_CONFIG_MONGODB_URL: mongodb://root:root@db:27017/
   
 volumes: 
   portfolio-db:
