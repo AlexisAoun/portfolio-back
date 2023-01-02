@@ -13,10 +13,12 @@ mod utils;
 
 use crate::routes::article::{get_all_articles, get_article_by_id};
 use crate::routes::tag::get_all_tags;
+use crate::utils::db::check_db_credentials;
+use rocket::fairing::{Fairing, Info, Kind};
 use rocket::fs::{relative, FileServer};
 use rocket::http::Header;
 use rocket::{Request, Response};
-use rocket::fairing::{Fairing, Info, Kind};
+use std::io::stdin;
 
 pub struct CORS;
 
@@ -25,7 +27,7 @@ impl Fairing for CORS {
     fn info(&self) -> Info {
         Info {
             name: "Add CORS headers to responses",
-            kind: Kind::Response
+            kind: Kind::Response,
         }
     }
 
@@ -37,11 +39,38 @@ impl Fairing for CORS {
     }
 }
 
+async fn compute_uri_from_user() -> String {
+    let mut uri: String = String::new();
+    while !check_db_credentials(&uri).await {
+        let mut mongo_username: String = String::new();
+        let mut mongo_password: String = String::new();
+        println!("Enter DB credentials");
+        println!("Username:");
+        stdin()
+            .read_line(&mut mongo_username)
+            .expect("failed to read username");
+        println!("Password:");
+        stdin()
+            .read_line(&mut mongo_password)
+            .expect("failed to read password");
+        uri.push_str("mongodb://");
+        uri.push_str(&mongo_username.trim_end());
+        uri.push_str(":");
+        uri.push_str(&mongo_password.trim_end());
+        uri.push_str("@0.0.0.0:27017/");
+    }
+    uri
+}
 
 #[launch]
-fn rocket() -> _ {
+async fn rocket() -> _ {
+    let uri: String = compute_uri_from_user().await;
     rocket::build()
-        .mount("/", routes![get_all_articles, get_all_tags, get_article_by_id])
+        .manage(uri)
+        .mount(
+            "/",
+            routes![get_all_articles, get_all_tags, get_article_by_id],
+        )
         .mount("/media/", FileServer::from(relative!("assets")))
         .attach(CORS)
 }
